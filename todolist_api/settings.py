@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-2w@d4^+onf)w%r#p=1%u)&(!%p4dyfpez26!9(memcmhzjr&h&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['musgrestapi.pythonanywhere.com']
+ALLOWED_HOSTS = [
+    'localhost',
+    'musgrestapi.pythonanywhere.com'
+    ]
 
 
 # Application definition
@@ -37,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'todo',
 ]
 
 MIDDLEWARE = [
